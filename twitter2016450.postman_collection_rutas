@@ -1,0 +1,358 @@
+{
+	"info": {
+		"_postman_id": "3e5848ab-9e0c-4a45-9320-49d0d1e5d878",
+		"name": "twitter2016450",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZWZiZmM0YzA1ZjJmMTNkMDAwN2ZmMDAiLCJuYW1lIjoibG9hcmNhIiwidXNlcm5hbWUiOiJsb2FyY2ExMiIsIm5vX2ZvbGxvd2luZyI6MCwiaWF0IjoxNTkzNjQ1MzMyLCJleHAiOjE1OTU5NzgxMzJ9.b7y8lgoS46YcbHAcfviENul5ksLcjiMd4_rOW0o_R3U\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "commands",
+							"value": "register nombre correo@gmail.com usuario contraseña",
+							"type": "text"
+						},
+						{
+							"key": "gettoken",
+							"value": "true",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "localhost:3050/v1/commands",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"v1",
+						"commands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "commands",
+							"value": "login usuario o correo contraseña true",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "localhost:3050/v1/commands",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"v1",
+						"commands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_tweet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "commands",
+							"value": "add_tweet descripcion ",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "localhost:3050/v1/commands",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"v1",
+						"commands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit_tweet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "commands",
+							"value": "edit_tweet idTweet nuevaDescripcion",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "localhost:3050/v1/commands",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"v1",
+						"commands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_tweet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "commands",
+							"value": "delete_twet idTweet",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "localhost:3050/v1/commands",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"v1",
+						"commands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view_tweet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "commands",
+							"value": "view_tweet username",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "localhost:3050/v1/commands",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"v1",
+						"commands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "follow",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "commands",
+							"value": "follow username",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "localhost:3050/v1/commands",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"v1",
+						"commands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unfollow",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "commands",
+							"value": "unfollow username",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "localhost:3050/v1/commands",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"v1",
+						"commands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "commands",
+							"value": "profile username",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "localhost:3050/v1/commands",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"v1",
+						"commands"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
